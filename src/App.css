@@ -58,3 +58,38 @@
 .cell.alive {
   background-color: #111827;
 }
+
+/* 🌙 Dark mode */
+.app.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+.app.dark .title {
+  color: #f8fafc;
+}
+
+.app.dark .controls button {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+.app.dark .controls button:hover {
+  background-color: #334155;
+}
+
+/* Grid */
+.app.dark .grid-container {
+  background-color: #020617;
+}
+
+.app.dark .cell {
+  background-color: #020617;
+  border-color: #1e293b;
+}
+
+.app.dark .cell.alive {
+  background-color: #e5e7eb;
+}
+

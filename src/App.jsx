@@ -50,6 +50,7 @@ const createRandomGrid = (rows, cols) => {
 function App() {
   const [grid, setGrid] = useState(() => createGrid(ROWS, COLS));
   const [isRunning, setIsRunning] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const intervalRef = useRef(null);
 
@@ -68,6 +69,11 @@ useEffect(() => {
     clearInterval(intervalRef.current);
   };
 }, []);
+
+const toggleTheme = () => {
+  setIsDarkMode(prev => !prev);
+};
+
 
 
 const stopSimulation = () => {
@@ -117,7 +123,7 @@ const randomizeGrid = () => {
 };
 
   return (
-  <div className="app">
+  <div className={`app ${isDarkMode ? "dark" : ""}`}>
     <h1 className="title">Conway’s Game of Life</h1>
 
     <div className="controls">
@@ -130,6 +136,8 @@ const randomizeGrid = () => {
       <button onClick={nextGeneration}>Next</button>
       <button onClick={resetGrid}>Reset</button>
       <button onClick={randomizeGrid}>Random</button>
+      <button onClick={toggleTheme}> {isDarkMode ? "Light Mode" : "Dark Mode"} </button>
+
     </div>
 
     <Grid grid={grid} toggleCell={toggleCell} />
