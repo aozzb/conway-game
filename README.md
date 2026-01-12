@@ -53,7 +53,7 @@ src/
   App.jsx           // State, logic, controls
   App.css           // App-specific styles & theming
 
-```text
+```txt
 
 ## 🎮 How It Works
 
