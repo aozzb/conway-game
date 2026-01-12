@@ -53,6 +53,8 @@ src/
   App.jsx           // State, logic, controls
   App.css           // App-specific styles & theming
 
+```text
+
 ## 🎮 How It Works
 
 - The grid is represented as a **2D array**
