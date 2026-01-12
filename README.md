@@ -52,8 +52,8 @@ src/
     createGrid.js   // Grid factory (pure function)
   App.jsx           // State, logic, controls
   App.css           // App-specific styles & theming
-
 ```
+--- 
 
 ## 🎮 How It Works
 
@@ -72,20 +72,23 @@ src/
 ```bash
 git clone <your-repo-url>
 cd conways-game-of-life
+```
 
 ### 2️⃣ Install dependencies
 ```bash
 npm install
-
+```
 
 ### 3️⃣ Run the app
 ```bash
 npm run dev
+```
 
-Open your browser at:
-
+### 4️⃣ Open your browser at:
 ```txt
 http://localhost:5173
+```
+---
 
 ## 🧪 Controls
 
@@ -95,6 +98,8 @@ http://localhost:5173
 - **Reset** → Clear the grid  
 - **Random** → Seed a random pattern  
 - **Dark Mode / Light Mode** → Toggle theme
+
+---
 
 ## 📄 License
 
