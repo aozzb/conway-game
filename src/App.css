@@ -1,5 +1,46 @@
+/* App layout */
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.controls button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.controls button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Grid */
 .grid-container {
   display: inline-block;
+  background-color: #ddd;
+  padding: 6px;
+  border-radius: 6px;
 }
 
 .row {
@@ -7,13 +48,13 @@
 }
 
 .cell {
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ccc;
-  background-color: white;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
   cursor: pointer;
 }
 
 .cell.alive {
-  background-color: black;
+  background-color: #111827;
 }
