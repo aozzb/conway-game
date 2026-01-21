@@ -4,6 +4,7 @@ A frontend-only implementation of **Conway’s Game of Life**, built with **Reac
 
 This project intentionally avoids overengineering (no backend, no external state libraries) and focuses on **clean logic, predictable React patterns, and clarity over flashiness**.
 
+Hosted on netlify here: https://aozzgameoflife.netlify.app/
 ---
 
 ## 🚀 Features
