@@ -8,6 +8,43 @@
   align-items: center;
 }
 
+/* Allow grid to scroll on small screens */
+.grid-wrapper {
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .cell {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cell {
+    width: 10px;
+    height: 10px;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.cell {
+  touch-action: manipulation;
+}
+
+.app {
+  width: 100%;
+  max-width: 1200px;
+}
+
+
 /* Title */
 .title {
   font-size: 1.5rem;
