@@ -139,8 +139,9 @@ const randomizeGrid = () => {
       <button onClick={toggleTheme}> {isDarkMode ? "Light Mode" : "Dark Mode"} </button>
 
     </div>
-
-    <Grid grid={grid} toggleCell={toggleCell} />
+    <div className="grid-wrapper">
+      <Grid grid={grid} toggleCell={toggleCell} />
+    </div>
   </div>
 );
 
